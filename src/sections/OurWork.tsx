@@ -10,9 +10,9 @@ const OurWork: React.FC<OurWorkProps> = ({ onOpenModal }) => {
   const thumbnails = swiperImages.slice(0, 6); 
 
   return (
-    <section id="our-work" className="bg-white py-20">
+    <section id="our-work" className="bg-white dark:bg-primary-intro py-20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-black text-3xl md:text-4xl font-raleway font-bold text-center mb-12">
+        <h2 className="text-black dark:text-white text-3xl md:text-4xl font-raleway font-bold text-center mb-12 transition-colors duration-300">
           Our Recent Projects
         </h2>
         
@@ -38,7 +38,7 @@ const OurWork: React.FC<OurWorkProps> = ({ onOpenModal }) => {
         <div className="text-center mt-10">
           <button
             onClick={onOpenModal}
-            className="text-sm text-white font-opensans font-semibold bg-gray-800 hover:bg-gray-600 transition-colors rounded-full px-12 py-3 shadow-lg"
+            className="text-sm text-white font-opensans font-semibold bg-gray-800 hover:bg-gray-600 dark:bg-accent-blue dark:hover:bg-accent-cyan transition-colors rounded-full px-12 py-3 shadow-lg"
           >
             View Full Portfolio ({swiperImages.length} Images)
           </button>

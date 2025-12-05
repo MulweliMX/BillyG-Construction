@@ -3,7 +3,7 @@ import ContactForm from './ContactForm';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 relative text-white">
+    <footer className="bg-gray-800 dark:bg-primary-footer relative text-white transition-colors duration-300">
       
       {/* Contact Form positioned absolutely */}
       <ContactForm />
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
                   </a>
                 </li>
               </ul>
-              <p className="mt-3 text-xs">We Serve Gauteng, Limpopo and beyond — with on-site and remote construction services.</p>
+              <p className="mt-3 text-xs text-gray-400">We Serve Gauteng, Limpopo and beyond — with on-site and remote construction services.</p>
             </div>
           </div>
           
