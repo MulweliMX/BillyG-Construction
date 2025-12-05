@@ -1,22 +1,35 @@
 {
-  "name": "fylo-landing-page",
+  "name": "billy-g-tradings",
   "version": "0.0.0",
   "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.4",
     "tailwindcss": "^3.4.17",
+    "typescript": "^5.5.4",
     "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "swiper": "^11.1.8"
   },
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "type": "module",
-  "description": "Desktop view:",
-  "main": "postcss.config.js",
-  "keywords": [],
+  "description": "Modernized Billy G Tradings website using React and TypeScript.",
+  "main": "src/main.tsx",
+  "keywords": [
+    "react",
+    "typescript",
+    "tailwind"
+  ],
   "author": "",
   "license": "ISC"
 }
