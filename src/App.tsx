@@ -15,7 +15,7 @@ const App: React.FC = () => {
     if (typeof window !== 'undefined') {
       const savedTheme = localStorage.getItem('theme') as 'light' | 'dark';
       if (savedTheme) return savedTheme;
-      // Check system preference
+      // Default to light if no preference is saved, or use system preference
       return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
     return 'light';
@@ -25,15 +25,14 @@ const App: React.FC = () => {
     const root = document.documentElement;
     const body = document.body;
 
-    // 1. Apply 'dark' class to HTML root element
     if (theme === 'dark') {
       root.classList.add('dark');
-      // 2. Update body classes for base colors defined in index.html
+      // Apply dark body background/text
       body.classList.remove('bg-white', 'text-black');
       body.classList.add('bg-primary-intro', 'text-white');
     } else {
       root.classList.remove('dark');
-      // 2. Update body classes for base colors defined in index.html
+      // Apply light body background/text
       body.classList.remove('bg-primary-intro', 'text-white');
       body.classList.add('bg-white', 'text-black');
     }
