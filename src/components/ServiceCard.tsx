@@ -11,8 +11,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ iconName, title, description 
   const IconComponent = LucideIcons[iconName];
 
   if (!IconComponent) {
-    console.error(`Icon not found for name: ${iconName}`);
-    return null;
+    // Fallback or error handling if icon name is invalid
+    return (
+      <div className="p-8 rounded-lg shadow-lg border border-red-500">
+        <p className="text-red-600">Error: Icon not found.</p>
+      </div>
+    );
   }
 
   return (
