@@ -23,16 +23,19 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const root = document.documentElement;
+    const body = document.body;
+
+    // 1. Apply 'dark' class to HTML root element
     if (theme === 'dark') {
       root.classList.add('dark');
-      // Update body classes for base colors defined in index.html
-      document.body.classList.remove('bg-white', 'text-black');
-      document.body.classList.add('bg-primary-intro', 'text-white');
+      // 2. Update body classes for base colors defined in index.html
+      body.classList.remove('bg-white', 'text-black');
+      body.classList.add('bg-primary-intro', 'text-white');
     } else {
       root.classList.remove('dark');
-      // Update body classes for base colors defined in index.html
-      document.body.classList.remove('bg-primary-intro', 'text-white');
-      document.body.classList.add('bg-white', 'text-black');
+      // 2. Update body classes for base colors defined in index.html
+      body.classList.remove('bg-primary-intro', 'text-white');
+      body.classList.add('bg-white', 'text-black');
     }
     localStorage.setItem('theme', theme);
   }, [theme]);
