@@ -1,21 +1,21 @@
 export const services = [
   {
-    icon: './public/images/icon-construction.svg',
+    icon: 'Hammer', // Replaces icon-construction.svg
     title: 'Building Construction',
     description: 'From residential to commercial structures, our team delivers solid and sustainable builds using the latest industry standards.',
   },
   {
-    icon: './public/images/icon-security.svg',
+    icon: 'HardHat', // Replaces icon-security.svg (Civil Engineering focus)
     title: 'Civil Engineering',
     description: 'We handle large-scale infrastructure projects, including roads, bridges, and drainage systems with expert precision and planning.',
   },
   {
-    icon: './public/images/icon-collaboration.svg',
+    icon: 'Palette', // Replaces icon-collaboration.svg (Interior Design focus)
     title: 'Interior Design',
     description: 'Modern and elegant designs tailored to your lifestyle and business needs — from floor plans to final décor.',
   },
   {
-    icon: './public/images/icon-any-file.svg',
+    icon: 'Wrench', // Replaces icon-any-file.svg (Renovations focus)
     title: 'Renovations & Installations',
     description: 'We provide reliable electrical and plumbing installations and cost-effective remodeling solutions to give your space a fresh new look.',
   },
