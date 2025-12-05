@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { navLinks } from '../data/navigation';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 
@@ -9,15 +9,37 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const headerRef = useRef<HTMLElement>(null); // Ref for the entire header
 
   const handleLinkClick = () => {
     setIsMenuOpen(false);
   };
 
+  // Effect to handle clicks outside the header
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (isMenuOpen && headerRef.current && !headerRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMenuOpen]);
+
   const ThemeIcon = theme === 'dark' ? Sun : Moon;
 
   return (
-    <header id="home" className="fixed top-0 left-0 right-0 z-30 transition-colors duration-300 p-4 md:p-6">
+    <header 
+      id="home" 
+      ref={headerRef} // Attach ref here
+      className="fixed top-0 left-0 right-0 z-30 transition-colors duration-300 p-4 md:p-6"
+    >
       <div className="
         max-w-7xl mx-auto 
         bg-gray-800 dark:bg-primary-intro 
