@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroCarousel from '../components/HeroCarousel';
+import SloganRotator from '../components/SloganRotator';
 
 const Hero: React.FC = () => {
   return (
@@ -13,8 +14,8 @@ const Hero: React.FC = () => {
         {/* Content Overlay */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 md:p-12">
           
-          {/* Logo (Optional, keeping it minimal) */}
-          {/* <img src="./public/images/logobxfinal.png" alt="Billy G Logo" className="w-20 md:w-28 mb-4" /> */}
+          {/* Slogan Rotator */}
+          <SloganRotator />
           
           <h1 className="text-white text-3xl md:text-5xl font-raleway font-bold leading-tight drop-shadow-lg max-w-4xl">
             Building Excellence, Engineering Trust

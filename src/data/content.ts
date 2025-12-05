@@ -42,3 +42,10 @@ export const heroCarouselImages = [
   'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764956783/modernshowers_fk9qyg.jpg',
   'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764956785/modern_kitchen_z8wsuu.jpg',
 ];
+
+export const heroSlogans = [
+  'Reliable Construction Service.',
+  'You Dream It, We Build It.',
+  'Engineering Trust, Building Excellence.',
+  'Quality Craftsmanship, Lasting Results.',
+];
