@@ -15,7 +15,7 @@ const HeroCarousel: React.FC = () => {
         spaceBetween={0}
         slidesPerView={1}
         autoplay={{
-          delay: 3000, // Changed from 4000ms to 3000ms
+          delay: 4000, // Changed back to 4 seconds
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
@@ -27,8 +27,8 @@ const HeroCarousel: React.FC = () => {
             <img 
               src={src} 
               alt={`Construction Project ${index + 1}`} 
-              // Continuous subtle scale animation (removed group-hover dependency)
-              className="w-full h-full object-cover transition-transform duration-[3000ms] ease-linear scale-[1.02] hover:scale-[1.05]" 
+              // Apply continuous zoom animation
+              className="w-full h-full object-cover animate-subtle-zoom" 
             />
             {/* Overlay for better text readability and subtle effect */}
             <div className="absolute inset-0 bg-black opacity-30 transition-opacity duration-500"></div>

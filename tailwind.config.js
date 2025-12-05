@@ -28,6 +28,16 @@ export default {
       screens: {
         'mobile': "375px",
         'desktop': "1440px"
+      },
+      // Adding custom animation definitions
+      keyframes: {
+        'subtle-zoom': {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+        }
+      },
+      animation: {
+        'subtle-zoom': 'subtle-zoom 8s ease-in-out infinite alternate',
       }
     },
   },
