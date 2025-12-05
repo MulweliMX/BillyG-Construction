@@ -3,23 +3,29 @@ import { heroSlogans } from '../data/content';
 
 const SloganRotator: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isFading, setIsFading] = useState(false);
+  const [displayIndex, setDisplayIndex] = useState(0);
+  const [isFadingOut, setIsFadingOut] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIsFading(true); // Start fade out
+      // 1. Start fade out
+      setIsFadingOut(true); 
       
-      // Wait for fade out (500ms) then change content and fade in
+      // 2. Wait for fade out duration (500ms)
       const fadeTimeout = setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % heroSlogans.length);
-        setIsFading(false); // Start fade in
+        // 3. Change content index (hidden state)
+        const nextIndex = (currentIndex + 1) % heroSlogans.length;
+        setCurrentIndex(nextIndex);
+        
+        // 4. Start fade in
+        setIsFadingOut(false); 
       }, 500);
 
       return () => clearTimeout(fadeTimeout);
-    }, 4000); // Change slogan every 4 seconds (4000ms)
+    }, 4000); // Total cycle time (4000ms)
 
     return () => clearInterval(interval);
-  }, []);
+  }, [currentIndex]); // Depend on currentIndex to restart the cycle for the new slogan
 
   return (
     <div className="min-h-10 md:min-h-12 mb-6 overflow-hidden">
@@ -27,8 +33,8 @@ const SloganRotator: React.FC = () => {
         className={`
           text-xl md:text-3xl font-raleway font-medium 
           text-accent-cyan 
-          transition-opacity duration-500 ease-in-out drop-shadow-lg
-          ${isFading ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}
+          transition-all duration-500 ease-in-out drop-shadow-lg
+          ${isFadingOut ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}
         `}
       >
         {heroSlogans[currentIndex]}
