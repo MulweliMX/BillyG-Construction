@@ -11,7 +11,7 @@ const ProcessAccordion: React.FC = () => {
   return (
     <div className="mt-10 space-y-4">
       <h3 className="font-raleway text-xl font-semibold text-black dark:text-white mb-6">
-        Our 5-Step Project Process
+        Our Dynamic 5-Step Project Framework
       </h3>
       {workProcessSteps.map((step, index) => (
         <div 

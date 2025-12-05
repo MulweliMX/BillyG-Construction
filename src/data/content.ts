@@ -52,23 +52,23 @@ export const heroSlogans = [
 
 export const workProcessSteps = [
   {
-    title: "1. Initial Site Visit & Consultation",
-    description: "We start with a comprehensive site visit to understand your vision, assess the location, and discuss project requirements and feasibility.",
+    title: "1. Discovery & Scope Definition",
+    description: "We begin by understanding your unique vision, project goals, and technical requirements across all our service domains (building, civil, design, or renovation).",
   },
   {
-    title: "2. Detailed Assessment & Planning",
-    description: "Our engineers and designers conduct a detailed assessment, creating preliminary sketches, timelines, and resource allocation plans.",
+    title: "2. Strategic Design & Engineering",
+    description: "Our expert team develops detailed blueprints, structural plans, and aesthetic designs, ensuring optimal resource allocation and compliance with all regulations.",
   },
   {
-    title: "3. Quotation & Contract Finalization",
-    description: "A transparent, no-obligation quotation is provided. Once approved, we finalize the contract and secure all necessary permits.",
+    title: "3. Transparent Proposal & Agreement",
+    description: "A comprehensive, fixed-price proposal is presented. Upon acceptance, we finalize the contract and handle all necessary permits and logistics.",
   },
   {
-    title: "4. Execution & Quality Control",
-    description: "Construction begins. We maintain strict quality control checks and regular communication to ensure the project stays on track and meets our high standards.",
+    title: "4. Execution & Adaptive Management",
+    description: "We execute the project with precision, maintaining rigorous quality control. Our management style is adaptive, ensuring flexibility to handle dynamic site conditions.",
   },
   {
-    title: "5. Handover & Post-Completion Support",
-    description: "The completed project is handed over. We provide necessary documentation and remain available for any post-completion support or maintenance.",
+    title: "5. Final Delivery & Ongoing Partnership",
+    description: "The project is delivered on time and to specification. We provide full documentation and establish an ongoing partnership for future maintenance or expansion needs.",
   },
 ];
