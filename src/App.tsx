@@ -10,17 +10,16 @@ import Modal from './components/Modal';
 const App: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Theme state management
-  const [theme, setTheme] = useState<'light' | 'dark'>('light'); // FORCING INITIAL STATE TO LIGHT
+  // Theme state management: Initialize state once from localStorage or default to 'light'
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('theme') as 'light' | 'dark';
+      return savedTheme || 'light';
+    }
+    return 'light';
+  });
 
   useEffect(() => {
-    // Re-apply localStorage logic inside useEffect to persist changes after the first render
-    const savedTheme = localStorage.getItem('theme') as 'light' | 'dark';
-    if (savedTheme && savedTheme !== theme) {
-        setTheme(savedTheme);
-        return;
-    }
-
     const root = document.documentElement;
     const body = document.body;
 
