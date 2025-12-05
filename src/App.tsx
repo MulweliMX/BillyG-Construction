@@ -15,8 +15,8 @@ const App: React.FC = () => {
     if (typeof window !== 'undefined') {
       const savedTheme = localStorage.getItem('theme') as 'light' | 'dark';
       if (savedTheme) return savedTheme;
-      // Default to light if no preference is saved, or use system preference
-      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      // Default to light mode if no preference is saved, ignoring system preference for now
+      return 'light';
     }
     return 'light';
   });

@@ -3,17 +3,7 @@ import React from 'react';
 const Hero: React.FC = () => {
   return (
     <section className="bg-white dark:bg-primary-intro pb-20 md:pb-40 relative transition-colors duration-300">
-      <img 
-        src="./public/images/bg-curvymxfx.svg" 
-        alt="background curve" 
-        className="absolute bottom-0 w-full dark:hidden" // Hide light curve in dark mode
-      />
-      {/* Use a different curve or color for dark mode if available, otherwise rely on background color */}
-      <img 
-        src="./public/images/bg-curvy gray.svg" 
-        alt="background curve dark" 
-        className="absolute bottom-0 w-full hidden dark:block" // Show dark curve
-      />
+      {/* Removed background curve images for better dark mode blending */}
       
       <div className="flex flex-col items-center justify-center gap-8 max-w-7xl mx-auto px-6 pt-10">
         <img src="./public/images/logoblackfx.png" alt="intro" className="md:max-w-md dark:hidden" />
