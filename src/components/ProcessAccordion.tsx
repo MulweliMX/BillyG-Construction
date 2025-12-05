@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { workProcessSteps } from '../data/content';
+import { ChevronDown } from 'lucide-react';
 
 const ProcessAccordion: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -41,17 +42,14 @@ const ProcessAccordion: React.FC = () => {
           >
             {step.title}
             
-            {/* View More/Less Button */}
-            <span className={`
-                text-xs font-semibold px-4 py-1.5 rounded-full 
-                transition-colors duration-300 
-                ${openIndex === index 
-                    ? 'bg-white text-accent-blue hover:bg-gray-100' 
-                    : 'bg-white dark:bg-accent-cyan text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-accent-blue'
-                }
-            `}>
-              {openIndex === index ? 'View Less' : 'View Details'}
-            </span>
+            {/* Chevron Icon */}
+            <ChevronDown 
+                className={`
+                    w-5 h-5 transition-transform duration-300 
+                    ${openIndex === index ? 'rotate-180' : 'rotate-0'}
+                    ${openIndex === index ? 'text-white' : 'text-accent-cyan dark:text-accent-cyan'}
+                `}
+            />
           </button>
 
           {/* Content */}
