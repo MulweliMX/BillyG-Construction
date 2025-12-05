@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { workProcessSteps } from '../data/content';
-import { ChevronDown } from 'lucide-react';
 
 const ProcessAccordion: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -17,27 +16,42 @@ const ProcessAccordion: React.FC = () => {
       {workProcessSteps.map((step, index) => (
         <div 
           key={index} 
-          className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden transition-all duration-300 shadow-md dark:shadow-none"
+          className={`
+            rounded-xl overflow-hidden transition-all duration-300 
+            ${openIndex === index 
+              ? 'shadow-2xl border border-accent-blue dark:border-accent-cyan' 
+              : 'shadow-lg border border-gray-200 dark:border-primary-testimonials hover:shadow-xl'
+            }
+          `}
         >
           {/* Header/Trigger */}
           <button
             onClick={() => toggleStep(index)}
             className={`
-              flex justify-between items-center w-full p-4 text-left 
+              flex justify-between items-center w-full p-5 text-left 
               font-opensans font-semibold text-base 
               transition-colors duration-300
               ${openIndex === index 
                 ? 'bg-accent-blue text-white' 
-                : 'bg-gray-50 dark:bg-primary-testimonials text-gray-900 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-primary-testimonials/80'
+                : 'bg-white dark:bg-primary-testimonials text-gray-900 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-primary-testimonials/90'
               }
             `}
             aria-expanded={openIndex === index}
             aria-controls={`content-${index}`}
           >
             {step.title}
-            <ChevronDown 
-              className={`w-5 h-5 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : 'rotate-0'}`} 
-            />
+            
+            {/* View More/Less Button */}
+            <span className={`
+                text-xs font-semibold px-4 py-1.5 rounded-full 
+                transition-colors duration-300 
+                ${openIndex === index 
+                    ? 'bg-white text-accent-blue hover:bg-gray-100' 
+                    : 'bg-white dark:bg-accent-cyan text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-accent-blue'
+                }
+            `}>
+              {openIndex === index ? 'View Less' : 'View Details'}
+            </span>
           </button>
 
           {/* Content */}
@@ -49,7 +63,7 @@ const ProcessAccordion: React.FC = () => {
             `}
           >
             <div className="overflow-hidden">
-              <p className="p-4 text-sm font-opensans text-gray-700 dark:text-gray-400 bg-white dark:bg-primary-intro">
+              <p className="p-5 text-sm font-opensans text-gray-700 dark:text-gray-400 bg-gray-50 dark:bg-primary-intro">
                 {step.description}
               </p>
             </div>
