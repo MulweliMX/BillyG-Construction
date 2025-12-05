@@ -2,6 +2,8 @@ import React from 'react';
 import ContactForm from './ContactForm';
 
 const Footer: React.FC = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-gray-800 dark:bg-primary-footer relative text-white transition-colors duration-300">
       
@@ -81,7 +83,7 @@ const Footer: React.FC = () => {
             </a>
           </div>
         </div>
-        <p className="text-center text-xs mt-10 text-gray-400">© 2024 Billy G Tradings. All rights reserved.</p>
+        <p className="text-center text-xs mt-10 text-gray-400">© {currentYear} Billy G Tradings. All rights reserved.</p>
       </div>
     </footer>
   );
