@@ -20,16 +20,17 @@ const OurWork: React.FC<OurWorkProps> = ({ onOpenModal }) => {
           {thumbnails.map((src, index) => (
             <div 
               key={index} 
-              className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg aspect-video"
+              className="relative group cursor-pointer overflow-hidden rounded-lg shadow-xl aspect-video"
               onClick={onOpenModal}
             >
               <img 
                 src={src} 
                 alt={`Project Thumbnail ${index + 1}`} 
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-white text-lg font-semibold border-2 border-white px-4 py-2 rounded-full">View Gallery</span>
+              {/* Enhanced Overlay */}
+              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="text-white text-lg font-semibold border-2 border-white px-6 py-3 rounded-full backdrop-blur-sm">View Gallery</span>
               </div>
             </div>
           ))}
