@@ -49,3 +49,26 @@ export const heroSlogans = [
   'Engineering Trust, Building Excellence.',
   'Quality Craftsmanship, Lasting Results.',
 ];
+
+export const workProcessSteps = [
+  {
+    title: "1. Initial Site Visit & Consultation",
+    description: "We start with a comprehensive site visit to understand your vision, assess the location, and discuss project requirements and feasibility.",
+  },
+  {
+    title: "2. Detailed Assessment & Planning",
+    description: "Our engineers and designers conduct a detailed assessment, creating preliminary sketches, timelines, and resource allocation plans.",
+  },
+  {
+    title: "3. Quotation & Contract Finalization",
+    description: "A transparent, no-obligation quotation is provided. Once approved, we finalize the contract and secure all necessary permits.",
+  },
+  {
+    title: "4. Execution & Quality Control",
+    description: "Construction begins. We maintain strict quality control checks and regular communication to ensure the project stays on track and meets our high standards.",
+  },
+  {
+    title: "5. Handover & Post-Completion Support",
+    description: "The completed project is handed over. We provide necessary documentation and remain available for any post-completion support or maintenance.",
+  },
+];
