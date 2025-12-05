@@ -22,16 +22,16 @@ export const services = [
 ];
 
 export const swiperImages = [
-  './public/images/swiper1.jpg',
-  './public/images/swiper2.jpg',
-  './public/images/swiperex2 d.jpg',
-  './public/images/swiper3.jpg',
-  './public/images/swiper7.jpg',
-  './public/images/swiper5.jpg',
-  './public/images/swiper10.jpg',
-  './public/images/swiperex1d.jpg',
-  './public/images/swiper9.jpg',
-  './public/images/swoper8.jpg',
+  'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961099/swiper1_cryai5.jpg',
+  'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961099/swiper2_itwaft.jpg',
+  'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961105/swiperex2_d_g1t6om.jpg',
+  'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961101/swiper3_pnwo6c.jpg',
+  'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961102/swiper7_nrfni4.jpg',
+  'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961102/swiper5_qnu5n1.jpg',
+  'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961104/swiper10_vgdtud.jpg',
+  'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961105/swiperex1d_eo72ef.jpg',
+  'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961103/swiper9_xx1vfk.jpg',
+  'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961106/swoper8_tda8gh.jpg',
 ];
 
 export const heroCarouselImages = [

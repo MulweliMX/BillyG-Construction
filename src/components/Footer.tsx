@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="text-white font-opensans text-sm max-w-7xl mx-auto pt-60 pb-12 md:pt-46 md:pb-24 flex flex-col px-6">
-        <img src="./public/images/logobxfinal.png" alt="logo" className="w-28 md:w-36 mb-10" />
+        <img src="https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961097/logobxfinal_a7wzfo.png" alt="logo" className="w-28 md:w-36 mb-10" />
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8">
 
