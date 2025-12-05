@@ -22,10 +22,11 @@ const SloganRotator: React.FC = () => {
   }, []);
 
   return (
-    <div className="h-8 md:h-10 mb-4 overflow-hidden">
+    <div className="h-10 md:h-12 mb-4 overflow-hidden">
       <p 
         className={`
-          text-accent-cyan text-lg md:text-xl font-raleway font-medium 
+          text-xl md:text-3xl font-raleway font-medium 
+          text-accent-cyan 
           transition-opacity duration-500 ease-in-out drop-shadow-lg
           ${isFading ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}
         `}

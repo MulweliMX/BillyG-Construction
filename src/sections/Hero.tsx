@@ -4,9 +4,31 @@ import SloganRotator from '../components/SloganRotator';
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-white dark:bg-primary-intro pb-20 md:pb-40 transition-colors duration-300">
+    <section className="
+      bg-white dark:bg-primary-intro 
+      relative 
+      pb-20 md:pb-40 
+      transition-colors duration-300
       
-      <div className="max-w-7xl mx-auto px-6 pt-10">
+      /* Curvy Background Styling */
+      after:content-[''] 
+      after:absolute 
+      after:bottom-0 
+      after:left-0 
+      after:right-0 
+      after:h-40 md:after:h-60 /* Height of the curve */
+      after:bg-no-repeat 
+      after:bg-cover 
+      after:bg-center
+      
+      /* Mobile Curve */
+      after:bg-[url('./public/images/bg-curvy-mobile.svg')]
+      
+      /* Desktop Curve (overrides mobile) */
+      md:after:bg-[url('./public/images/bg-curvy-desktop.svg')]
+    ">
+      
+      <div className="max-w-7xl mx-auto px-6 pt-10 relative z-10">
         
         {/* Main Content Block (Above Carousel) */}
         <div className="flex flex-col items-center justify-center text-center p-6 md:p-12 mb-10">
