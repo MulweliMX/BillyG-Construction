@@ -21,11 +21,11 @@ const Hero: React.FC = () => {
       after:bg-cover 
       after:bg-center
       
-      /* Mobile Curve */
-      after:bg-[url('./public/images/bg-curvy-mobile.svg')]
+      /* Mobile Curve (Dark Mode Only) */
+      dark:after:bg-[url('./public/images/bg-curvy-mobile.svg')]
       
-      /* Desktop Curve (overrides mobile) */
-      md:after:bg-[url('./public/images/bg-curvy-desktop.svg')]
+      /* Desktop Curve (Dark Mode Only) */
+      dark:md:after:bg-[url('./public/images/bg-curvy-desktop.svg')]
     ">
       
       <div className="max-w-7xl mx-auto px-6 pt-10 relative z-10">
