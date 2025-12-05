@@ -11,17 +11,16 @@ const App: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Theme state management
-  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    if (typeof window !== 'undefined') {
-      const savedTheme = localStorage.getItem('theme') as 'light' | 'dark';
-      // Force default to 'light' if no preference is saved, ensuring a white background start.
-      if (savedTheme) return savedTheme;
-      return 'light';
-    }
-    return 'light';
-  });
+  const [theme, setTheme] = useState<'light' | 'dark'>('light'); // FORCING INITIAL STATE TO LIGHT
 
   useEffect(() => {
+    // Re-apply localStorage logic inside useEffect to persist changes after the first render
+    const savedTheme = localStorage.getItem('theme') as 'light' | 'dark';
+    if (savedTheme && savedTheme !== theme) {
+        setTheme(savedTheme);
+        return;
+    }
+
     const root = document.documentElement;
     const body = document.body;
 
