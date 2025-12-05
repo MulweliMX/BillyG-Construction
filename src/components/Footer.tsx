@@ -7,8 +7,11 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-800 dark:bg-primary-footer relative text-white transition-colors duration-300">
       
-      {/* Contact Form positioned absolutely */}
-      <ContactForm />
+      {/* Scroll Target for #contact link */}
+      <div id="contact" className="relative scroll-mt-24">
+        {/* Contact Form positioned absolutely relative to the footer */}
+        <ContactForm />
+      </div>
 
       <div className="text-white font-opensans text-sm max-w-7xl mx-auto pt-60 pb-12 md:pt-46 md:pb-24 flex flex-col px-6">
         <img src="./public/images/logobxfinal.png" alt="logo" className="w-28 md:w-36 mb-10" />

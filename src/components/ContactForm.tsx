@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactForm: React.FC = () => {
   return (
-    <section id="contact" className="absolute left-0 right-0 -top-40 md:-top-28">
+    <section className="absolute left-0 right-0 -top-40 md:-top-28">
       <form 
         action="https://formcarry.com/s/u9MzFrv3nEa" 
         method="POST" 
