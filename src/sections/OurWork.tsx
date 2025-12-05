@@ -10,7 +10,7 @@ const OurWork: React.FC<OurWorkProps> = ({ onOpenModal }) => {
   const thumbnails = swiperImages.slice(0, 6); 
 
   return (
-    <section id="our-work" className="bg-white dark:bg-primary-intro py-20 transition-colors duration-300">
+    <section id="our-work" className="bg-white dark:bg-primary-intro pt-20 pb-48 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-black dark:text-white text-3xl md:text-4xl font-raleway font-bold text-center mb-12 transition-colors duration-300">
           Our Recent Projects
