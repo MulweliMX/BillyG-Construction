@@ -3,7 +3,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Hero from './sections/Hero';
 import Services from './sections/Services';
-import ProductiveSection from './sections/ProductiveSection';
+import AboutUs from './sections/AboutUs';
+import OurWork from './sections/OurWork';
 import Modal from './components/Modal';
 
 const App: React.FC = () => {
@@ -18,7 +19,8 @@ const App: React.FC = () => {
       <main className="flex-grow">
         <Hero />
         <Services />
-        <ProductiveSection onSeeWorkClick={openModal} />
+        <AboutUs />
+        <OurWork onOpenModal={openModal} />
       </main>
       <Footer />
       <Modal isOpen={isModalOpen} onClose={closeModal} />

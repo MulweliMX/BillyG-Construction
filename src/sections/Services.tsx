@@ -13,7 +13,7 @@ const ServiceCard: React.FC<{ icon: string, title: string, description: string }
 
 const Services: React.FC = () => {
   return (
-    <section className="bg-white py-16">
+    <section id="services" className="bg-white py-16">
       <div className="grid md:grid-cols-2 gap-y-16 md:gap-y-24 max-w-7xl mx-auto px-6">
         {services.map((service, index) => (
           <ServiceCard key={index} {...service} />
