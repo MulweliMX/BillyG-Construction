@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-800 dark:bg-primary-footer relative text-white transition-colors duration-300">
       
-      {/* Scroll Target for #contact link. scroll-mt-40 (160px) offsets the scroll position to account for the fixed header and the form's absolute positioning. */}
+      {/* Scroll Target for #contact link. */}
       <div id="contact" className="relative scroll-mt-40">
         {/* Contact Form positioned absolutely relative to the footer */}
         <ContactForm />
@@ -16,10 +16,11 @@ const Footer: React.FC = () => {
       <div className="text-white font-opensans text-sm max-w-7xl mx-auto pt-60 pb-12 md:pt-46 md:pb-24 flex flex-col px-6">
         <img src="https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961097/logobxfinal_a7wzfo.png" alt="logo" className="w-28 md:w-36 mb-10" />
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8">
+        {/* Adjusted grid: 3 columns on desktop for Location, Contact, and Socials */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16">
 
           {/* Location Info */}
-          <div className="flex gap-4 col-span-1 md:col-span-1">
+          <div className="flex gap-4 col-span-1">
             <img src="https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961095/icon-location_vgscgf.svg" alt="location" className="w-3 h-4 mt-1 flex-shrink-0" />
             <div className="space-y-2 text-sm">
               <p className="font-semibold mb-1">Our Locations:</p>
@@ -41,7 +42,7 @@ const Footer: React.FC = () => {
           </div>
           
           {/* Contact Details */}
-          <div className="flex flex-col gap-4 col-span-1 md:col-span-1">
+          <div className="flex flex-col gap-4 col-span-1">
             <div className="flex gap-4 items-center">
               <img src="https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961095/icon-phone_pvm7cv.svg" alt="phone" className="w-4 h-4 flex-shrink-0" />
               <p>+27 65 905 0192</p>
@@ -58,23 +59,8 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Navigation Links */}
-          <div className="flex gap-10 col-span-1 md:col-span-1">
-            <ul className="space-y-4">
-              <li><a href="#" className="hover:text-accent-cyan transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-accent-cyan transition-colors">Projects</a></li>
-              <li><a href="#" className="hover:text-accent-cyan transition-colors">News</a></li>
-            </ul>
-
-            <ul className="space-y-4">
-              <li><a href="#" className="hover:text-accent-cyan transition-colors">Support</a></li>
-              <li><a href="#" className="hover:text-accent-cyan transition-colors">Terms</a></li>
-              <li><a href="#" className="hover:text-accent-cyan transition-colors">Privacy</a></li>
-            </ul>
-          </div>
-
           {/* Social Icons */}
-          <div className="flex gap-4 self-start col-span-1 md:col-span-1 md:justify-end">
+          <div className="flex gap-4 self-start col-span-1 md:justify-end">
             <a href="#" aria-label="Facebook" className="p-2 border rounded-full hover:border-accent-cyan transition-colors">
               <img src="https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961094/icon-facebook_igfdmc.svg" alt="facebook" className="w-4 h-4" />
             </a>
