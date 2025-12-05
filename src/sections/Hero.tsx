@@ -4,24 +4,21 @@ import SloganRotator from '../components/SloganRotator';
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-white dark:bg-primary-intro pb-20 md:pb-40 relative transition-colors duration-300">
+    <section className="bg-white dark:bg-primary-intro pb-20 md:pb-40 transition-colors duration-300">
       
-      <div className="max-w-7xl mx-auto px-6 pt-10 relative">
+      <div className="max-w-7xl mx-auto px-6 pt-10">
         
-        {/* Carousel Background */}
-        <HeroCarousel />
-
-        {/* Content Overlay */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 md:p-12">
+        {/* Main Content Block (Above Carousel) */}
+        <div className="flex flex-col items-center justify-center text-center p-6 md:p-12 mb-10">
           
           {/* Slogan Rotator */}
           <SloganRotator />
           
-          <h1 className="text-white text-3xl md:text-5xl font-raleway font-bold leading-tight drop-shadow-lg max-w-4xl">
+          <h1 className="text-black dark:text-white text-3xl md:text-5xl font-raleway font-bold leading-tight max-w-4xl transition-colors duration-300">
             Building Excellence, Engineering Trust
           </h1>
           
-          <p className="text-gray-200 font-opensans text-base leading-relaxed max-w-2xl mt-4 mb-8 drop-shadow-md">
+          <p className="text-gray-700 dark:text-gray-300 font-opensans text-base leading-relaxed max-w-2xl mt-4 mb-8 transition-colors duration-300">
             Your trusted partner for quality construction, civil works, interior design, and renovations across South Africa.
           </p>
       
@@ -31,6 +28,9 @@ const Hero: React.FC = () => {
             </button>
           </a>
         </div>
+
+        {/* Carousel Background (Below Content) */}
+        <HeroCarousel />
       </div>
     </section>
   );
