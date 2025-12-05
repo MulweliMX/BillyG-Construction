@@ -33,7 +33,17 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
             <ul className="flex gap-12 text-white text-sm font-opensans">
               {navLinks.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="hover:text-accent-cyan transition-colors font-semibold">
+                  <a 
+                    href={link.href} 
+                    className="relative flex items-center group hover:text-accent-cyan transition-colors font-semibold"
+                  >
+                    {/* Hover Dot Indicator */}
+                    <span className="
+                      absolute -left-4 w-2 h-2 rounded-full bg-accent-cyan 
+                      opacity-0 scale-0 
+                      group-hover:opacity-100 group-hover:scale-100 
+                      transition-all duration-200 ease-out
+                    "></span>
                     {link.name}
                   </a>
                 </li>
@@ -72,7 +82,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
         </div>
       </div>
 
-      {/* Mobile Navigation Menu - Needs adjustment for new structure */}
+      {/* Mobile Navigation Menu */}
       <nav 
         className={`md:hidden absolute w-[calc(100%-3rem)] mx-6 mt-2 
           bg-gray-800 dark:bg-primary-intro 
