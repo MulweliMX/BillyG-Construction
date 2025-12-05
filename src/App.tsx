@@ -14,8 +14,8 @@ const App: React.FC = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     if (typeof window !== 'undefined') {
       const savedTheme = localStorage.getItem('theme') as 'light' | 'dark';
+      // Force default to 'light' if no preference is saved, ensuring a white background start.
       if (savedTheme) return savedTheme;
-      // Default to light mode if no preference is saved, ignoring system preference for now
       return 'light';
     }
     return 'light';
