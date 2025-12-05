@@ -7,8 +7,8 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-800 dark:bg-primary-footer relative text-white transition-colors duration-300">
       
-      {/* Scroll Target for #contact link */}
-      <div id="contact" className="relative">
+      {/* Scroll Target for #contact link. scroll-mt-40 (160px) offsets the scroll position to account for the fixed header and the form's absolute positioning. */}
+      <div id="contact" className="relative scroll-mt-40">
         {/* Contact Form positioned absolutely relative to the footer */}
         <ContactForm />
       </div>
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li><a href="#" className="hover:text-accent-cyan transition-colors">Support</a></li>
               <li><a href="#" className="hover:text-accent-cyan transition-colors">Terms</a></li>
-              <li><a href="#" className="hover:text-cyan transition-colors">Privacy</a></li>
+              <li><a href="#" className="hover:text-accent-cyan transition-colors">Privacy</a></li>
             </ul>
           </div>
 
