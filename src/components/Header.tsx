@@ -97,7 +97,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
               <a 
                 href={link.href} 
                 onClick={handleLinkClick}
-                className="block py-2 hover:bg-gray-700 dark:hover:bg-gray-900 transition-colors font-semibold"
+                className="block py-2 hover:bg-gray-700 dark:hover:bg-gray-900 hover:text-accent-cyan transition-colors font-semibold"
               >
                 {link.name}
               </a>
