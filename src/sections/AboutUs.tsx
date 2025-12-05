@@ -9,7 +9,7 @@ const AboutUs: React.FC = () => {
         {/* Left Column: Image and Main Text */}
         <div className="flex flex-col gap-8 w-full md:w-1/2">
           <img 
-            src="./public/images/illustration-stay-productive.png" 
+            src="https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961252/illustration-stay-productive_hvtf11.png" 
             alt="stay-productive"
             className="max-w-xs md:max-w-xl w-full mx-auto"
           />
