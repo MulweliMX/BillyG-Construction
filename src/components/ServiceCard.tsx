@@ -1,5 +1,6 @@
 import React from 'react';
 import * as LucideIcons from 'lucide-react';
+import { LucideIcon } from 'lucide-react';
 
 interface ServiceCardProps {
   iconName: keyof typeof LucideIcons;
@@ -8,7 +9,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ iconName, title, description }) => {
-  const IconComponent = LucideIcons[iconName];
+  const IconComponent = LucideIcons[iconName] as LucideIcon;
 
   if (!IconComponent) {
     // Fallback or error handling if icon name is invalid

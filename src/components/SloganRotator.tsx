@@ -3,7 +3,6 @@ import { heroSlogans } from '../data/content';
 
 const SloganRotator: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [displayIndex, setDisplayIndex] = useState(0);
   const [isFadingOut, setIsFadingOut] = useState(false);
 
   useEffect(() => {
