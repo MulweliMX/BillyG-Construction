@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
 
           {/* Location Info */}
           <div className="flex gap-4 col-span-1 md:col-span-1">
-            <img src="./public/images/icon-location.svg" alt="location" className="w-3 h-4 mt-1 flex-shrink-0" />
+            <img src="https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961095/icon-location_vgscgf.svg" alt="location" className="w-3 h-4 mt-1 flex-shrink-0" />
             <div className="space-y-2 text-sm">
               <p className="font-semibold mb-1">Our Locations:</p>
               <ul className="list-disc list-inside space-y-1 pl-4">
@@ -43,17 +43,17 @@ const Footer: React.FC = () => {
           {/* Contact Details */}
           <div className="flex flex-col gap-4 col-span-1 md:col-span-1">
             <div className="flex gap-4 items-center">
-              <img src="./public/images/icon-phone.svg" alt="phone" className="w-4 h-4 flex-shrink-0" />
+              <img src="https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961095/icon-phone_pvm7cv.svg" alt="phone" className="w-4 h-4 flex-shrink-0" />
               <p>+27 65 905 0192</p>
             </div>
 
             <div className="flex gap-4 items-center">
-              <img src="./public/images/icon-phone.svg" alt="phone" className="w-4 h-4 flex-shrink-0" />
+              <img src="https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961095/icon-phone_pvm7cv.svg" alt="phone" className="w-4 h-4 flex-shrink-0" />
               <p>+27 81 016 0749</p>
             </div>
 
             <div className="flex gap-4 items-center">
-              <img src="./public/images/icon-email.svg" alt="email" className="w-4 h-4 flex-shrink-0" />
+              <img src="https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961093/icon-email_iyhacg.svg" alt="email" className="w-4 h-4 flex-shrink-0" />
               <p>info@billygtradings.co.za</p>
             </div>
           </div>
@@ -76,13 +76,13 @@ const Footer: React.FC = () => {
           {/* Social Icons */}
           <div className="flex gap-4 self-start col-span-1 md:col-span-1 md:justify-end">
             <a href="#" aria-label="Facebook" className="p-2 border rounded-full hover:border-accent-cyan transition-colors">
-              <img src="./public/images/icon-facebook.svg" alt="facebook" className="w-4 h-4" />
+              <img src="https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961094/icon-facebook_igfdmc.svg" alt="facebook" className="w-4 h-4" />
             </a>
             <a href="#" aria-label="Twitter" className="p-2 border rounded-full hover:border-accent-cyan transition-colors">
-              <img src="./public/images/icon-twitter.svg" alt="twitter" className="w-4 h-4" />
+              <img src="https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961096/icon-twitter_azcegc.svg" alt="twitter" className="w-4 h-4" />
             </a>
             <a href="#" aria-label="Instagram" className="p-2 border rounded-full hover:border-accent-cyan transition-colors">
-              <img src="./public/images/icon-instagram.svg" alt="instagram" className="w-4 h-4" />
+              <img src="https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961094/icon-instagram_rrbarv.svg" alt="instagram" className="w-4 h-4" />
             </a>
           </div>
         </div>

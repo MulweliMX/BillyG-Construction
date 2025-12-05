@@ -28,7 +28,7 @@ const AboutUs: React.FC = () => {
               className="flex items-center gap-2 font-opensans text-xs md:text-sm text-accent-cyan border-b border-accent-cyan pb-1 hover:text-accent-blue hover:border-accent-blue transition-colors w-fit"
             >
               View Our Portfolio
-              <img src="./public/images/icon-arrow.svg" alt="arrow" className="w-4 h-4" />
+              <img src="https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961092/icon-arrow_x04cab.svg" alt="arrow" className="w-4 h-4" />
             </a>
           </div>
         </div>
