@@ -39,7 +39,7 @@ export const heroCarouselImages = [
   'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764956494/roadwork_q5bd3y.jpg',
   'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764956494/pexels-rezwan-1078884_qqjzub.jpg',
   'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764956495/renovation_dxvdey.jpg',
-  'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764956783/modernshowers_fk9qyg.jpg',
+  'https://res-cloudinary.com/dqsh3hnnt/image/upload/v1764956783/modernshowers_fk9qyg.jpg',
   'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764956785/modern_kitchen_z8wsuu.jpg',
 ];
 
@@ -52,23 +52,23 @@ export const heroSlogans = [
 
 export const workProcessSteps = [
   {
-    title: "1. Discovery & Scope Definition",
+    title: "1. Define Project Scope",
     description: "We begin by understanding your unique vision, project goals, and technical requirements across all our service domains (building, civil, design, or renovation).",
   },
   {
-    title: "2. Strategic Design & Engineering",
+    title: "2. Strategic Design",
     description: "Our expert team develops detailed blueprints, structural plans, and aesthetic designs, ensuring optimal resource allocation and compliance with all regulations.",
   },
   {
-    title: "3. Transparent Proposal & Agreement",
+    title: "3. Finalize Agreement",
     description: "A comprehensive, fixed-price proposal is presented. Upon acceptance, we finalize the contract and handle all necessary permits and logistics.",
   },
   {
-    title: "4. Execution & Adaptive Management",
+    title: "4. Execute & Manage",
     description: "We execute the project with precision, maintaining rigorous quality control. Our management style is adaptive, ensuring flexibility to handle dynamic site conditions.",
   },
   {
-    title: "5. Final Delivery & Ongoing Partnership",
+    title: "5. Deliver & Partner",
     description: "The project is delivered on time and to specification. We provide full documentation and establish an ongoing partnership for future maintenance or expansion needs.",
   },
 ];
