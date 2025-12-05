@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
         transition-colors duration-300
       ">
         <div className="flex items-center justify-between p-4 md:p-4 px-6">
-          <img src="https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961098/logonavbar_snprls.png" alt="Billy G Logo" className="w-16 md:w-24" />
+          <img src="https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764961097/logobxfinal_a7wzfo.png" alt="Billy G Logo" className="w-16 md:w-24" />
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-12">
