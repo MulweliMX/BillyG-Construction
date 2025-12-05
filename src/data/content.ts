@@ -38,8 +38,7 @@ export const heroCarouselImages = [
   'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764956493/home_interior_gvf68k.jpg',
   'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764956494/roadwork_q5bd3y.jpg',
   'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764956494/pexels-rezwan-1078884_qqjzub.jpg',
-  'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764956495/renovation_dxvdey.jpg',
-  'https://res-cloudinary.com/dqsh3hnnt/image/upload/v1764956783/modernshowers_fk9qyg.jpg',
+  'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764956783/modernshowers_fk9qyg.jpg',
   'https://res.cloudinary.com/dqsh3hnnt/image/upload/v1764956785/modern_kitchen_z8wsuu.jpg',
 ];
 
